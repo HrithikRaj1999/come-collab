@@ -178,15 +178,15 @@ export type LiveCursorProps = {
 //   activeObjectRef: any;
 // };
 
-// export type CursorChatProps = {
-//   cursor: { x: number; y: number };
-//   cursorState: CursorState;
-//   setCursorState: (cursorState: CursorState) => void;
-//   updateMyPresence: (
-//     presence: Partial<{
-//       cursor: { x: number; y: number };
-//       cursorColor: string;
-//       message: string;
-//     }>
-//   ) => void;
-// };
+export type CursorChatProps = {
+  cursor: { x: number; y: number };
+  cursorState: CursorState;
+  setCursorState: (cursorState: CursorState) => void;
+  updateMyPresence: (
+    presence: Partial<{
+      cursor: { x: number; y: number };
+      cursorColor: string;
+      message: string;
+    }>
+  ) => void;
+};
