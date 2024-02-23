@@ -21,13 +21,13 @@ export type CursorState =
       mode: CursorMode.ReactionSelector;
     }
   | {
-      mode: CursorMode.Reaction;
-      reaction: string;
+      mode?: CursorMode.Reaction;
+      reaction?: string;
       isPressed: boolean;
     };
 
 export type Reaction = {
-  value: string;
+  value?: string;
   timestamp: number;
   point: { x: number; y: number };
 };

@@ -1,0 +1,111 @@
+/* Enhanced goUp animations with rotation and scale */
+.goUp0 {
+  opacity: 0;
+  animation: goUpAnimation0 3s, fadeOut 3s;
+}
+
+@keyframes goUpAnimation0 {
+  from {
+    transform: translate(10px, 10px) rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: translate(10px, 55px) rotate(45deg) scale(1.2);
+  }
+
+  to {
+    transform: translate(10px, 100px) rotate(90deg) scale(1);
+  }
+}
+
+.goUp1 {
+  opacity: 0;
+  animation: goUpAnimation1 3s, fadeOut 3s;
+}
+
+@keyframes goUpAnimation1 {
+  from {
+    transform: translate(10px, 0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(5px, -150px) rotate(180deg) scale(0.8);
+  }
+
+  to {
+    transform: translate(0px, -300px) rotate(360deg) scale(1);
+  }
+}
+
+.goUp2 {
+  opacity: 0;
+  animation: goUpAnimation2 3s, fadeOut 3s;
+}
+
+@keyframes goUpAnimation2 {
+  from {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(0px, -100px) scale(1.5);
+  }
+
+  to {
+    transform: translate(0px, -200px) scale(1);
+  }
+}
+
+/* Enhanced leftRight animations with easing and delays */
+.leftRight0 {
+  animation: leftRightAnimation0 0.5s alternate infinite ease-in-out;
+}
+
+@keyframes leftRightAnimation0 {
+  from {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  to {
+    transform: translate(50px, 0px) rotate(-10deg);
+  }
+}
+
+.leftRight1 {
+  animation: leftRightAnimation1 0.5s alternate infinite ease-in-out;
+}
+
+@keyframes leftRightAnimation1 {
+  from {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  to {
+    transform: translate(100px, 0px) rotate(10deg);
+  }
+}
+
+.leftRight2 {
+  animation: leftRightAnimation2 0.5s alternate infinite ease-in-out;
+}
+
+@keyframes leftRightAnimation2 {
+  from {
+    transform: translate(0px, 0px) scale(1);
+  }
+
+  to {
+    transform: translate(-50px, 0px) scale(1.1);
+  }
+}
+
+/* Improved fadeOut animation with ease */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
